@@ -21,3 +21,6 @@ Route::get('/post/download','PostController@download')->name('post-download');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('{title}','SectionsController@index')->name('section.index');
+Route::get('/articles/{id}', 'ArticlesController@index')->name('articles.index');

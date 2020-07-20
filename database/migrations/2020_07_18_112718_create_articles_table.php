@@ -17,7 +17,7 @@ class CreateArticlesTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->text('content');
-            $table->integer('sId');
+            $table->integer('sid');
             $table->softDeletes();
             $table->integer('agreeCount')->unsigned()->default(0);
             $table->integer('replyCount')->unsigned()->default(0);;
