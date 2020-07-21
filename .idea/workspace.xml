@@ -26,17 +26,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="201c034c-b892-4f32-85d9-09254f1e82f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SectionsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/articles/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/sections/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ed894aaf-2774-4a0c-9c6e-3283bb06e705/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Services/ReplyManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Reply.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/ReplyFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_07_21_024759_create_replies_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_07_21_061259_create_posts_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/PostTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/ReplyTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/modules/reply.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/posts/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/f598e9a3-5bed-4a83-aa38-48797b805e3e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f598e9a3-5bed-4a83-aa38-48797b805e3e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SectionsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SectionsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ArticleFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ArticleFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_18_112718_create_articles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_18_112718_create_articles_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/laravel-admin/bootstrap-fileinput/js/plugins/purify.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/laravel-admin/bootstrap-fileinput/js/plugins/purify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/laravel-admin/bootstrap-fileinput/js/plugins/purify.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/laravel-admin/bootstrap-fileinput/js/plugins/purify.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/articles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/post/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sections/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sections/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,25 +180,25 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/posts" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/css" />
-      <recent name="$PROJECT_DIR$/config" />
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/app/Admin/Services" />
-      <recent name="$PROJECT_DIR$/app/Admin/Providers" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/Models" />
       <recent name="$PROJECT_DIR$/app/Http/Services" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/posts" />
+      <recent name="$PROJECT_DIR$/public/css" />
+      <recent name="$PROJECT_DIR$/config" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/Admin/Services" />
     </key>
   </component>
   <component name="RunManager">
@@ -217,6 +230,7 @@
       <workItem from="1595055938883" duration="371000" />
       <workItem from="1595056406403" duration="8374000" />
       <workItem from="1595245531301" duration="6243000" />
+      <workItem from="1595298713848" duration="21731000" />
     </task>
     <servers />
   </component>
@@ -264,10 +278,18 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="0" y="531" width="927" height="365" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1594886182584" />
-    <state x="598" y="444" width="398" height="165" key="NewPhpFileDialog" timestamp="1595249935611">
+    <state x="693" y="373" width="524" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1595318055650">
+      <screen x="0" y="89" width="3840" height="1053" />
+    </state>
+    <state x="693" y="373" width="524" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.89.3840.1053@0.89.3840.1053" timestamp="1595318055650" />
+    <state x="753" y="302" width="404" height="630" key="NewPhpClassDialog" timestamp="1595324223808">
+      <screen x="0" y="89" width="3840" height="1053" />
+    </state>
+    <state x="753" y="302" width="404" height="630" key="NewPhpClassDialog/0.89.3840.1053@0.89.3840.1053" timestamp="1595324223808" />
+    <state x="598" y="444" width="398" height="165" key="NewPhpFileDialog" timestamp="1595335980932">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="598" y="444" width="398" height="165" key="NewPhpFileDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1595249935611" />
+    <state x="598" y="444" width="398" height="165" key="NewPhpFileDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1595335980932" />
     <state x="215" y="155" width="1471" height="733" key="SettingsEditor" timestamp="1594883897537">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -276,10 +298,11 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="471" y="287" width="1449" height="793" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1594886903714" />
-    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1595249744084">
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1595335830967">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="2543" y="238" width="672" height="696" key="search.everywhere.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1595072771661" />
-    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1595249744084" />
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1595335830967" />
+    <state x="1246" y="321" width="1346" height="681" key="search.everywhere.popup/0.89.3840.1053@0.89.3840.1053" timestamp="1595330780696" />
   </component>
 </project>

@@ -15,8 +15,7 @@ Route::get('/', function () {
     return redirect('/post');
 });
 
-Route::get('/post','PostController@index')->name('post');
-Route::get('/post/download','PostController@download')->name('post-download');
+Route::get('/posts/{id}','PostsController@index')->name('posts.index');
 
 Auth::routes();
 

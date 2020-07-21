@@ -1,9 +1,10 @@
 @extends('modules.header')
 @section('content')
     <div class="container">
-        <h1>{{$article['title']}}</h1>
+        <h1>{{$post['title']}}</h1>
         <h2>{{$user['name']}}</h2>
-        <p>{{$article['content']}}</p>
+        <p>{{$post['content']}}</p>
+{{--        TODO: 应该有一个独立的blade--}}
         <ul>
             @foreach($replies as $reply)
                 <li>{{$reply['content']}} </li>
