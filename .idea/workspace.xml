@@ -26,19 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="201c034c-b892-4f32-85d9-09254f1e82f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/UserDetail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/UserDetailFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_07_22_072324_create_user_details_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/UserDetailTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/users/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f598e9a3-5bed-4a83-aa38-48797b805e3e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f598e9a3-5bed-4a83-aa38-48797b805e3e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +210,7 @@
       <workItem from="1595056406403" duration="8374000" />
       <workItem from="1595245531301" duration="6243000" />
       <workItem from="1595298713848" duration="22596000" />
-      <workItem from="1595385693301" duration="14812000" />
+      <workItem from="1595385693301" duration="16571000" />
     </task>
     <servers />
   </component>
@@ -281,10 +270,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="598" y="444" width="398" height="165" key="NewPhpFileDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1595406368193" />
-    <state x="215" y="155" width="1471" height="733" key="SettingsEditor" timestamp="1594883897537">
+    <state x="215" y="155" width="1471" height="733" key="SettingsEditor" timestamp="1595407270742">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="215" y="155" width="1471" height="733" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1594883897537" />
+    <state x="215" y="155" width="1471" height="733" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1595407270742" />
     <state x="471" y="287" width="1449" height="793" key="find.popup" timestamp="1594886903714">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
