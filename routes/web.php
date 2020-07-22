@@ -19,5 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/{title}','SectionsController@index')->name('section.index');
+Route::get('/{title}','SectionsController@index')->name('sections.index');
 Route::get('/articles/{id}', 'ArticlesController@index')->name('articles.index');
+
+Route::get('/users/{id}','UsersController@index')->name('user.index');
