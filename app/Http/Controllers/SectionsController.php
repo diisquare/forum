@@ -11,7 +11,7 @@ class SectionsController extends Controller
 {
     public function index($title){
         $section = Section::where('title',$title)->firstOrFail();
-        $articles = Article::where('sid',$section['id'])
+        $articles = Article::where('sid',$section->id)
                 ->orderBy('published_at', 'desc')
                 ->paginate(3);
         return view('sections.index',compact('articles'));

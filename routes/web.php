@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return redirect('/post');
-});
+Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/posts/{id}','PostsController@index')->name('posts.index');
 
@@ -21,5 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('{title}','SectionsController@index')->name('section.index');
+Route::get('/{title}','SectionsController@index')->name('section.index');
 Route::get('/articles/{id}', 'ArticlesController@index')->name('articles.index');

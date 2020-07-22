@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -16,7 +16,7 @@
 </head>
 <body>
 {{-- Navigation Bar--}}
-@include('modules.navbar')
+@include('layouts.navbar')
 
 
 <main>
@@ -34,7 +34,7 @@
                 </a>
             </li>
             <li><i class="fa-li fa fa-copyright"></i>
-                Copyright DII-web Group All Rights Reserved.
+                Copyright DII-web Group All Rights Reserved 2020.
             </li>
             <li><i class="fa-li fa fa-cc"></i>
                 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">

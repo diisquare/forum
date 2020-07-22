@@ -1,6 +1,6 @@
 <?php
 return[
-    'title'=>'图片应用',
+    'title'=>'Forum',
     'post_per_page'=>5,
     'disk'=>'share',
     'Admin'=>[

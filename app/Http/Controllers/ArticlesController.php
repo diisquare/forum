@@ -13,8 +13,8 @@ class ArticlesController extends Controller
         $article = Article::where('id',$id)->firstOrFail();
         //        TODO:匿名功能
         $user = User::where('id',$article['publisherId'])->firstOrFail();
-        $replyManager = New ReplyManager();
-        $replies = $replyManager->getReplies($article['replies']);
+        $replyManager = New ReplyManager($article->replies);
+        $replies = $replyManager->getReplies();
         return view('articles.index',['article'=>$article,'user'=>$user,'replies'=>$replies]);
     }
 }
