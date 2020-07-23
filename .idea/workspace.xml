@@ -19,15 +19,16 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:dev" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="201c034c-b892-4f32-85d9-09254f1e82f9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/diisquare6.0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/diisquare6.0.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_18_112718_create_articles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_18_112718_create_articles_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,6 +143,9 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
       <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
     </include_path>
   </component>
   <component name="ProjectId" id="1YW8OSs9TXEzgCoeP9vhhpsfdGB" />
@@ -158,7 +162,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/posts" />
+    <property name="last_opened_file_path" value="$USER_HOME$/laravel/clone/diisquare.com" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -210,7 +214,8 @@
       <workItem from="1595056406403" duration="8374000" />
       <workItem from="1595245531301" duration="6243000" />
       <workItem from="1595298713848" duration="22596000" />
-      <workItem from="1595385693301" duration="16571000" />
+      <workItem from="1595385693301" duration="16835000" />
+      <workItem from="1595497493392" duration="3996000" />
     </task>
     <servers />
   </component>
@@ -222,19 +227,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="dev" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -262,6 +255,10 @@
       <screen x="0" y="89" width="3840" height="1053" />
     </state>
     <state x="693" y="373" width="524" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.89.3840.1053@0.89.3840.1053" timestamp="1595318055650" />
+    <state x="743" y="311" width="424" height="487" key="FileChooserDialogImpl" timestamp="1595502473348">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="743" y="311" width="424" height="487" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1595502473348" />
     <state x="753" y="302" width="404" height="630" key="NewPhpClassDialog" timestamp="1595324223808">
       <screen x="0" y="89" width="3840" height="1053" />
     </state>
@@ -278,11 +275,11 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="471" y="287" width="1449" height="793" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1594886903714" />
-    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1595406382568">
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1595503037556">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="2543" y="238" width="672" height="696" key="search.everywhere.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1595072771661" />
-    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1595406382568" />
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1595503037556" />
     <state x="1246" y="321" width="1346" height="681" key="search.everywhere.popup/0.89.3840.1053@0.89.3840.1053" timestamp="1595330780696" />
     <state x="685" y="456" width="540" height="197" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1595389909665">
       <screen x="0" y="27" width="1920" height="1053" />

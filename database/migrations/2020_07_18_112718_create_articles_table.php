@@ -24,6 +24,7 @@ class CreateArticlesTable extends Migration
             $table->integer('publisherId')->unsigned();
             $table->string('replies')->nullable();
             $table->timestamp('published_at')->nullable();
+            $table->timestamp('last_reply_at')->nullable();
             $table->timestamps();
         });
     }
