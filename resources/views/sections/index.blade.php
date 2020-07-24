@@ -3,7 +3,7 @@
     <div class="container">
         <ul>
             @foreach($articles as $article)
-            <li><a href="{{route('articles.index',['id'=>$article->id])}}">{{$article->title}}</a> </li>
+            <li><a href="{{route('articles.show',['article'=>$article->id])}}">{{$article->title}}</a> </li>
                 <em>{{$article->published_at}}</em>
             @endforeach
         </ul>

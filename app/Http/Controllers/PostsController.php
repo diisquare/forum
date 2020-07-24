@@ -9,12 +9,12 @@ use App\Http\Services\ReplyManager;
 
 class PostsController extends Controller
 {
-    public function index($id){
+    public function show($id){
         $post = Post::where('id',$id)->firstOrFail();
         //        TODO:匿名功能
         $user = User::where('id',$post->publisherId)->firstOrFail();
         $replyManager = new ReplyManager($post->replies);
         $replies=$replyManager->getReplies();
-        return view('posts.index',['post'=>$post,'user'=>$user,'replies'=>$replies]);
+        return view('posts.show',['post'=>$post,'user'=>$user,'replies'=>$replies]);
     }
 }

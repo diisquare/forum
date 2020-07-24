@@ -13,13 +13,14 @@
 
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('/posts/{id}','PostsController@index')->name('posts.index');
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/{title}','SectionsController@index')->name('sections.index');
-Route::get('/articles/{id}', 'ArticlesController@index')->name('articles.index');
 
-Route::get('/users/{id}','UsersController@index')->name('user.index');
+Route::resource('/users','UsersController',['only'=>['index','show']]);
+
+Route::resource('/articles', 'ArticlesController',['only'=>['create','store','show']]);
+
+Route::resource('/posts','PostController',['only'=>['show']]);
