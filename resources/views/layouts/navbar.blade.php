@@ -48,5 +48,9 @@
             </ul>
         </div>
     </nav>
+    <div class="container">
+        @include('modules.success')
+        @include('modules.error')
+    </div>
 </div>
 

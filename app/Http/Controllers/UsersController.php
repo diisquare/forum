@@ -8,8 +8,7 @@ use Illuminate\Http\Request;
 class UsersController extends Controller
 {
     public function index(){
-        dd('123');
-        redirect('/login');
+       return redirect('/login');
     }
 
     public function show($id){

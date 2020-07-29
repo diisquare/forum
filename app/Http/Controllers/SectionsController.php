@@ -13,7 +13,7 @@ class SectionsController extends Controller
         $section = Section::where('title',$title)->firstOrFail();
         $articles = Article::where('sid',$section->id)
                 ->orderBy('published_at', 'desc')
-                ->paginate(3);
+                ->paginate(config('diisquare.post_per_page'));
         return view('sections.index',compact('articles'));
     }
 }

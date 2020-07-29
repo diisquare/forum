@@ -17,10 +17,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/{title}','SectionsController@index')->name('sections.index');
+Route::get('/sections/{title}','SectionsController@index')->name('sections.index');
 
 Route::resource('/users','UsersController',['only'=>['index','show']]);
 
-Route::resource('/articles', 'ArticlesController',['only'=>['create','store','show']]);
+Route::post('/articles/{id}','ArticlesController@update')->name('articles.update');
+Route::resource('/articles', 'ArticlesController',['only'=>['create','store','show','edit','update','destroy']]);
 
-Route::resource('/posts','PostController',['only'=>['show']]);
+
+Route::resource('/posts','PostsController',['only'=>['create','show']]);

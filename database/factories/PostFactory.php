@@ -13,6 +13,6 @@ $factory->define(Post::class, function (Faker $faker) {
         'publisherId'=>$faker->numberBetween(1,20),
         'sId'=>$faker->numberBetween(1,5),
         'goodQuestionCount'=>0,
-        'replies'=>getFakeRepliesId(mt_rand(1,10),100),
+        'repliesStr'=>getFakeRepliesId(mt_rand(1,10),100),
     ];
 });

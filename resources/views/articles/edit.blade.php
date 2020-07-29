@@ -4,9 +4,10 @@
     <div class="container">
         <div class="col-md-8 order-md-1">
             <h4 class="mb-3">添加内容</h4>
-            <form role="form" method="POST" action="{{route('articles.store')}}">
+            <form role="form" method="POST" action="{{route('articles.update',$article->id)}}">
                 @csrf
                 <div class="row">
+                    <input id="publisherId" name="publisherId" type="hidden" value="{{$article->publisherId}}">
                     <div class="col-md-6 mb-3">
                         <label for="topic">发表类型</label>
                         <select class="custom-select d-block w-100" id="topic"  name="topic_type">
@@ -18,7 +19,7 @@
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="sid">发表分区</label>
-                        <select class="custom-select d-block w-100" id="sid"  name="sid">
+                        <select class="custom-select d-block w-100" id="sid"  name="sid" value="{{$article->sid}}">
                             @foreach($sections as $section)
                                 <option value="{{$section->id}}">{{$section->title}}</option>
                             @endforeach
@@ -31,7 +32,7 @@
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="title">标题</label>
-                        <input type="text" class="form-control" id="title"  name="title">
+                        <input type="text" class="form-control" id="title"  name="title" value="{{$article->title}}">
                         <div class="invalid-feedback">
                             A title is required;
                         </div>
@@ -39,7 +40,7 @@
                 </div>
                 <div  class="row">
                     <label for="content">内容</label>
-                    @include('modules.editor',['default'=>'# welcome','id'=>'content'])
+                    @include('modules.editor',['default'=>$article->content,'id'=>'content'])
                 </div>
                 <hr class="mb-4">
                 <div class="col-md-2">
@@ -49,3 +50,4 @@
         </div>
     </div>
 @endsection
+

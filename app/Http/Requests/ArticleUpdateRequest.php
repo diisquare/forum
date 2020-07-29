@@ -5,7 +5,7 @@ namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Auth;
 
-class ArticleCreateRequest extends FormRequest
+class ArticleUpdateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -14,11 +14,10 @@ class ArticleCreateRequest extends FormRequest
      */
     public function authorize()
     {
-        if (Auth::check()){
+        if ($this->request->get('publisherId')==Auth::id())
             return true;
-        } else {
+        else
             return false;
-        }
     }
 
     /**

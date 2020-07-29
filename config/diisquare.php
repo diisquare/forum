@@ -1,7 +1,8 @@
 <?php
 return[
     'title'=>'Forum',
-    'post_per_page'=>5,
+    'post_per_page'=>10,
+    'reply_per_page'=>5,
     'disk'=>'share',
     'Admin'=>[
         'disk'=>'public'

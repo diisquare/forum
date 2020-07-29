@@ -13,8 +13,7 @@ class PostsController extends Controller
         $post = Post::where('id',$id)->firstOrFail();
         //        TODO:匿名功能
         $user = User::where('id',$post->publisherId)->firstOrFail();
-        $replyManager = new ReplyManager($post->replies);
-        $replies=$replyManager->getReplies();
+        $replies = $post->replies();
         return view('posts.show',['post'=>$post,'user'=>$user,'replies'=>$replies]);
     }
 }

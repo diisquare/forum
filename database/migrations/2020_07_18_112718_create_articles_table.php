@@ -22,7 +22,7 @@ class CreateArticlesTable extends Migration
             $table->integer('agreeCount')->unsigned()->default(0);
             $table->integer('replyCount')->unsigned()->default(0);;
             $table->integer('publisherId')->unsigned();
-            $table->string('replies')->nullable();
+            $table->string('repliesStr')->nullable();
             $table->timestamp('published_at')->nullable();
             $table->timestamp('last_reply_at')->nullable();
             $table->timestamps();

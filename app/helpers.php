@@ -23,6 +23,10 @@
         return $replies;
     }
 
+    function getRepliesId($repliesStr){
+        return explode(';',$repliesStr,-1);
+    }
+
 function editor_config($editor_id = 'mdeditor')
 {
 

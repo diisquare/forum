@@ -24,7 +24,7 @@ class CreatePostsTable extends Migration
             $table->integer('publisherId')->unsigned();
             $table->timestamp('published_at')->nullable();
             $table->timestamp('last_reply_at')->nullable();
-            $table->string('replies')->nullable();
+            $table->string('repliesStr')->nullable();
             $table->timestamps();
         });
     }

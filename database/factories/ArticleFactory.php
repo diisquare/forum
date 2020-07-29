@@ -14,6 +14,6 @@ $factory->define(Article::class, function (Faker $faker) {
         'published_at'=>$faker->dateTimeBetween('-1 month','3 days'),
         'publisherId'=>$faker->numberBetween(1,20),
         'sId'=>$faker->numberBetween(1,5),
-        'replies'=>getFakeRepliesId(mt_rand(1,10),100),
+        'repliesStr'=>getFakeRepliesId(mt_rand(1,10),100),
     ];
 });
