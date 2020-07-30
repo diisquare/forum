@@ -26,3 +26,5 @@ Route::resource('/articles', 'ArticlesController',['only'=>['create','store','sh
 
 
 Route::resource('/posts','PostsController',['only'=>['create','show']]);
+
+Route::resource('/replies','RepliesController',['only'=>['store']]);

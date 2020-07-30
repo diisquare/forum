@@ -15,7 +15,7 @@ class CreateUserDetailsTable extends Migration
     {
         Schema::create('user_details', function (Blueprint $table) {
             $table->bigIncrements('user_id');
-            $table->boolean('isBanned');
+            $table->boolean('isBanned')->default('0');
             $table->string('avatar')->nullable();
             $table->text('slogan')->nullable();
             $table->integer('postCount')->default('0');

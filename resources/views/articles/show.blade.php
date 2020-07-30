@@ -27,7 +27,7 @@
                 <textarea id="append-test" style="display:none;">{!! $article->content !!}</textarea>
         </div>
 
-        @include('modules.reply',$replies)
+        @include('modules.reply',['replies'=>$replies,'topic'=>$article,'topicType'=>1])
 
     </div>
 

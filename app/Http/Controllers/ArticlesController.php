@@ -6,7 +6,6 @@ use App\Http\Requests\ArticleUpdateRequest;
 use App\Models\Section;
 use App\User;
 use Carbon\Carbon;
-use http\Message;
 use Illuminate\Http\Request;
 use App\Models\Article;
 use App\Http\Requests\ArticleCreateRequest;
@@ -26,8 +25,6 @@ class ArticlesController extends Controller
         'sid' => '',
         'publisherId'=>'',
         'repliesStr'=>'',
-        'published_at'=> '',
-        'updated_at'=>'',
     ];
 
     public function show($id){
