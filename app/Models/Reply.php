@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Carbon;
 
 /**
@@ -47,6 +48,7 @@ use Illuminate\Support\Carbon;
  */
 class Reply extends Model
 {
+    use SoftDeletes;
     public function syncTopic(){
         switch ($this->topic){
             case 0:
