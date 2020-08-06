@@ -62,3 +62,9 @@ $(function() {
 </script>';
 
 }
+
+
+function getUserName(int $id){
+    $user = \App\User::where('id',$id)->firstOrFail();
+    return $user->name;
+}

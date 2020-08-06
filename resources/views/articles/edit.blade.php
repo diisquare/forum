@@ -11,7 +11,7 @@
                     <div class="col-md-6 mb-3">
                         <label for="topic">发表类型</label>
                         <select class="custom-select d-block w-100" id="topic"  name="topic_type">
-                            <option value="2">Article</option>
+                            <option value="1">Article</option>
                         </select>
                         <div class="invalid-feedback">
                             Please select a topic type.

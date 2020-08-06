@@ -4,13 +4,13 @@
     <div class="container">
         <div class="col-md-8 order-md-1">
             <h4 class="mb-3">添加内容</h4>
-            <form role="form" method="POST" action="{{route('articles.store')}}">
+            <form role="form" method="POST" action="{{route('posts.store')}}">
                 @csrf
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="topic">发表类型</label>
                         <select class="custom-select d-block w-100" id="topic"  name="topic_type">
-                            <option value="1">Article</option>
+                            <option value="0">Post</option>
                         </select>
                         <div class="invalid-feedback">
                             Please select a topic type.

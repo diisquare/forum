@@ -6,7 +6,6 @@ use App\Http\Requests\ArticleUpdateRequest;
 use App\Models\Section;
 use App\User;
 use Carbon\Carbon;
-use Illuminate\Http\Request;
 use App\Models\Article;
 use App\Http\Requests\ArticleCreateRequest;
 use Illuminate\Support\Facades\Auth;
@@ -80,7 +79,14 @@ class ArticlesController extends Controller
        $sid = $article->sid;
        $section = Section::where('id',$sid)->firstOrFail();
        $title = $section->title;
-       $article->delete();
+       try {
+           $article->delete();
+       } catch (\Exception $e) {
+           return redirect()
+               ->route('sections.index',$title)
+               ->with('error','文章「' . $e . '」删除失败');
+
+       }
        return redirect()
            ->route('sections.index',$title)
            ->with('success','文章「' . $article->title . '」删除成功');

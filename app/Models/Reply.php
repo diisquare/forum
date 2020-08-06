@@ -2,9 +2,49 @@
 
 namespace App\Models;
 
-use App\User;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Carbon;
 
+/**
+ * App\Models\Reply
+ *
+ * @property int $id
+ * @property string $content
+ * @property int $topic
+ * @property int $topicId
+ * @property int|null $fatherId
+ * @property int|null $atId
+ * @property string|null $atName
+ * @property string|null $deleted_at
+ * @property int $agreeCount
+ * @property int $publisherId
+ * @property string $publisherName
+ * @property string|null $publisherAvatar
+ * @property string|null $published_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @method static Builder|Reply newModelQuery()
+ * @method static Builder|Reply newQuery()
+ * @method static Builder|Reply query()
+ * @method static Builder|Reply whereAgreeCount($value)
+ * @method static Builder|Reply whereAtId($value)
+ * @method static Builder|Reply whereAtName($value)
+ * @method static Builder|Reply whereContent($value)
+ * @method static Builder|Reply whereCreatedAt($value)
+ * @method static Builder|Reply whereDeletedAt($value)
+ * @method static Builder|Reply whereFatherId($value)
+ * @method static Builder|Reply whereId($value)
+ * @method static Builder|Reply wherePublishedAt($value)
+ * @method static Builder|Reply wherePublisherAvatar($value)
+ * @method static Builder|Reply wherePublisherId($value)
+ * @method static Builder|Reply wherePublisherName($value)
+ * @method static Builder|Reply whereTopic($value)
+ * @method static Builder|Reply whereTopicId($value)
+ * @method static Builder|Reply whereUpdatedAt($value)
+ * @method static whereIn(string $string, $repliesId)
+ * @method static where(string $string, int $id)
+ */
 class Reply extends Model
 {
     public function syncTopic(){
@@ -17,19 +57,6 @@ class Reply extends Model
                 $newRepliesStr = $article->repliesStr."$this->id".';';
                 $article->repliesStr = $newRepliesStr;
                 $article->save();
-        }
-    }
-
-    public function syncDate(){
-        $publisher = User::where('id',$this->publisherId)->firstOrFail();
-        $this->publisherName = $publisher->name;
-        $this->publisherAvatar=$publisher->details->avator;
-        if ($this->atId==0)
-            return;
-        else{
-            $at = $publisher = User::where('id',$this->atId)->firstOrFail();
-            $this->atName=$at->name;
-            return;
         }
     }
 

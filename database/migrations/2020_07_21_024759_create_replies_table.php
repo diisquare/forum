@@ -20,12 +20,9 @@ class CreateRepliesTable extends Migration
             $table->bigInteger('topicId');
             $table->bigInteger('fatherId')->nullable();
             $table->bigInteger('atId')->nullable();
-            $table->string('atName')->nullable();
             $table->softDeletes();
             $table->integer('agreeCount')->unsigned()->default(0);
             $table->integer('publisherId')->unsigned();
-            $table->string('publisherName');
-            $table->string('publisherAvatar')->nullable();
             $table->timestamp('published_at')->nullable();
             $table->timestamps();
         });
