@@ -4,7 +4,7 @@
         <input name="topicId" type="hidden" value="{{$topicId}}">
         <input name="fatherId" type="hidden" value="{{$fatherId}}">
         <input name="atId" type="hidden" value="{{$atId}}">
-        <div class="col-md-6">
+        <div class="col-md">
             <label>
                 <input type="text" class="form-control" name="content">
             </label>

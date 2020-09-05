@@ -18,48 +18,45 @@
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:composer" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:composer" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="201c034c-b892-4f32-85d9-09254f1e82f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Laravel_2020_8_3_9_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/PostCreateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/PostUpdateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/modules/mdViewer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/modules/reply/form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/posts/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/posts/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/gerrard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/gerrard.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/reply/comment.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/modules/reply/box.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RepliesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RepliesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Reply.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Reply.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Section.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Section.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/UserDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/UserDetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/ReplyFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ReplyFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_21_024759_create_replies_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_21_024759_create_replies_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/articles/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/articles/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/articles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/modules/reply.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modules/reply/reply.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/modules/reply/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modules/reply/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/modules/reply/reply.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modules/reply/reply.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +68,13 @@
     <execution>
       <executable path="composer" />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -207,10 +211,13 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/storage/framework/cache" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -218,19 +225,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/config" />
-      <recent name="$PROJECT_DIR$/resources/views/posts" />
-      <recent name="$PROJECT_DIR$/public/css" />
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/app/Admin/Services" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/modules/reply" />
       <recent name="$PROJECT_DIR$/public/css" />
       <recent name="$PROJECT_DIR$/resources/views/layouts" />
       <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config" />
+      <recent name="$PROJECT_DIR$/resources/views/posts" />
+      <recent name="$PROJECT_DIR$/public/css" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/Admin/Services" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.reply.blade.php">
@@ -294,7 +301,10 @@
       <workItem from="1596445321227" duration="5915000" />
       <workItem from="1596460278816" duration="2877000" />
       <workItem from="1596681064040" duration="777000" />
-      <workItem from="1596681863414" duration="21562000" />
+      <workItem from="1596681863414" duration="21891000" />
+      <workItem from="1596765791357" duration="3204000" />
+      <workItem from="1598520259911" duration="30000" />
+      <workItem from="1599267983544" duration="7439000" />
     </task>
     <servers />
   </component>
@@ -342,11 +352,11 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="758" y="300" width="927" height="365" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1595595255508" />
-    <state x="693" y="373" width="524" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596722268546">
+    <state x="693" y="373" width="524" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596722920150">
       <screen x="0" y="89" width="3840" height="1053" />
     </state>
     <state x="347" y="311" width="524" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1596122642154" />
-    <state x="693" y="373" width="524" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.89.3840.1053@0.89.3840.1053" timestamp="1596722268546" />
+    <state x="693" y="373" width="524" height="487" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.89.3840.1053@0.89.3840.1053" timestamp="1596722920150" />
     <state x="690" y="27" width="920" height="1053" key="CommitChangelistDialog2" timestamp="1596682126750">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -359,10 +369,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="315" y="450" width="320" height="210" key="ComposerValidateDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1596683887614" />
-    <state x="853" y="337" width="424" height="487" key="FileChooserDialogImpl" timestamp="1596683818340">
+    <state x="853" y="337" width="424" height="487" key="FileChooserDialogImpl" timestamp="1598520278505">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="853" y="337" width="424" height="487" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1596683818340" />
+    <state x="853" y="337" width="424" height="487" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1598520278505" />
     <state x="992" y="551" width="345" height="251" key="FrameworkEditDialogDimensionKey" timestamp="1596682803517">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -431,10 +441,10 @@
       <screen x="0" y="89" width="3840" height="1053" />
     </state>
     <state x="753" y="302" width="404" height="630" key="NewPhpClassDialog/0.89.3840.1053@0.89.3840.1053" timestamp="1595324223808" />
-    <state x="312" y="337" width="398" height="165" key="NewPhpFileDialog" timestamp="1596447515065">
+    <state x="312" y="337" width="398" height="165" key="NewPhpFileDialog" timestamp="1596768576937">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="312" y="337" width="398" height="165" key="NewPhpFileDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1596447515065" />
+    <state x="312" y="337" width="398" height="165" key="NewPhpFileDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1596768576937" />
     <state x="615" y="281" width="900" height="733" key="SettingsEditor" timestamp="1596698019687">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -443,20 +453,22 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="812" y="415" width="370" height="292" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.27.1920.1053@0.27.1920.1053" timestamp="1596119546159" />
-    <state x="471" y="287" width="1449" height="793" key="find.popup" timestamp="1594886903714">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="722" y="358" width="2222" height="1010" key="find.popup" timestamp="1599271721608">
+      <screen x="0" y="27" width="2944" height="1341" />
     </state>
     <state x="471" y="287" width="1449" height="793" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1594886903714" />
+    <state x="722" y="358" width="2222" height="1010" key="find.popup/0.27.2944.1341@0.27.2944.1341" timestamp="1599271721608" />
     <state x="488" y="193" width="672" height="680" key="run.anything.popup" timestamp="1596682908036">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="488" y="193" width="672" height="680" key="run.anything.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1596682908036" />
-    <state x="2102" y="260" width="797" height="681" key="search.everywhere.popup" timestamp="1596722068701">
-      <screen x="0" y="89" width="3840" height="1053" />
+    <state x="1402" y="312" width="1037" height="872" key="search.everywhere.popup" timestamp="1599272612245">
+      <screen x="0" y="27" width="2944" height="1341" />
     </state>
     <state x="2543" y="238" width="672" height="696" key="search.everywhere.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1595072771661" />
-    <state x="623" y="259" width="676" height="684" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1596698042100" />
-    <state x="2102" y="260" width="797" height="681" key="search.everywhere.popup/0.89.3840.1053@0.89.3840.1053" timestamp="1596722068701" />
+    <state x="623" y="259" width="676" height="684" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1596768227955" />
+    <state x="1402" y="312" width="1037" height="872" key="search.everywhere.popup/0.27.2944.1341@0.27.2944.1341" timestamp="1599272612245" />
+    <state x="2102" y="260" width="797" height="681" key="search.everywhere.popup/0.89.3840.1053@0.89.3840.1053" timestamp="1596722910134" />
     <state x="217" y="535" width="540" height="197" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1595595390882">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

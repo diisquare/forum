@@ -11,6 +11,7 @@
     <!-- <link rel="icon" href="{{asset('image/mylogo.jpg')}}">
     <link rel="apple-touch-icon" href="{{asset('image/mylogo.jpg')}}"> -->
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/reply/comment.css')}}">
     @yield('styles')
 
 </head>
