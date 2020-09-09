@@ -75,6 +75,7 @@ class FileManager
             }else{
                 $download= route('file-manager-download',['file'=>$file]);
             }
+
             array_push($filesInfo,[
                 'download'=>$download,
                 'name'=>$file,

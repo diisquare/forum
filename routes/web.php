@@ -29,3 +29,5 @@ Route::resource('/posts','PostsController',['only'=>['create','store','show','ed
 
 Route::post('/replies/{id}','RepliesController@update')->name('replies.update');
 Route::resource('/replies','RepliesController',['only'=>['store','destroy']]);
+
+Route::post('/upload/image','Upload\ImagesController@upload')->name('upload.image.upload');

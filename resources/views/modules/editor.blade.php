@@ -7,7 +7,7 @@
     <div id="editormd">
                         <textarea style="display:none;" id = "{{$id}}" name="{{$id}}">{!!$default!!}</textarea>
     </div>
-</div>
+
 
 @section('scripts')
     <script src="{{asset('vendor/editor.md/editormd.min.js')}}"></script>
@@ -31,6 +31,9 @@
                 codeFold : {{config('editor.codeFold')}},
                 flowChart: {{config('editor.flowChart')}},
                 sequenceDiagram: {{config('editor.sequenceDiagram')}},
+                imageUpload : {{config('editor.imageUpload')}},
+                imageFormats : ["jpg", "gif", "png"],
+                imageUploadURL : "{{url("upload/image")}}" + "?_token=" + "{{csrf_token()}}"+"&from=laravel-editor-md"
             });
         });
     </script>

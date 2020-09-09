@@ -134,14 +134,14 @@
 					if (fileName === "")
 					{
 						alert(imageLang.uploadFileEmpty);
-                        
+
                         return false;
 					}
-					
+
                     if (!isImage.test(fileName))
 					{
 						alert(imageLang.formatNotAllowed + settings.imageFormats.join(", "));
-                        
+
                         return false;
 					}
 
@@ -152,7 +152,7 @@
                         var uploadIframe = document.getElementById(iframeName);
 
                         uploadIframe.onload = function() {
-                            
+
                             loading(false);
 
                             var body = (uploadIframe.contentWindow ? uploadIframe.contentWindow : uploadIframe.contentDocument).document.body;
