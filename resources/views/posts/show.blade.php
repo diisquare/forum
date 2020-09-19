@@ -5,7 +5,7 @@
     {{--    todo: prettify--}}
     <div class="container">
         @auth
-            @if(Auth::user()->id == $post->publisherId)
+            @if(Auth::user()->id == $post->user_id)
                 <a href="{{route('posts.edit',$post->id)}}">
                     <button class="btn btn-primary btn-lg btn-block" > 修改 </button>
                 </a>

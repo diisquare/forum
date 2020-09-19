@@ -15,7 +15,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property int $goodQuestionCount
  * @property int $replyCount
- * @property int $publisherId
+ * @property int $user_id
  * @property string|null $published_at
  * @property string|null $last_reply_at
  * @property string|null $repliesStr
@@ -33,7 +33,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @method static \Illuminate\Database\Eloquent\Builder|Post whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Post whereLastReplyAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Post wherePublishedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Post wherePublisherId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Post whereRepliesStr($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Post whereReplyCount($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Post whereSid($value)
@@ -46,7 +45,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Post extends Model
 {
     use SoftDeletes;
-    protected $fillable=['title','content','sid','publisherId','repliesStr'];
+    protected $fillable=['title','content','sid','user_id','repliesStr'];
     protected $guarded=['repliesCount','goodQuestionCount'];
     public function getRepliesIdAttribute(){
         return getRepliesId($this->repliesStr);
@@ -54,4 +53,9 @@ class Post extends Model
     public function replies(){
         return Reply::getReplies($this->replies_id);
     }
+
+    public function user(){
+        return $this->belongsTo('App\Models\User');
+    }
+    ## TODO: edit corresponding method
 }

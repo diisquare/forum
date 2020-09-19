@@ -21,7 +21,7 @@ class CreatePostsTable extends Migration
             $table->softDeletes();
             $table->integer('goodQuestionCount')->unsigned()->default(0);
             $table->integer('replyCount')->unsigned()->default(0);;
-            $table->integer('publisherId')->unsigned();
+            $table->integer('user_id')->unsigned();
             $table->timestamp('published_at')->nullable();
             $table->timestamp('last_reply_at')->nullable();
             $table->string('repliesStr')->nullable();

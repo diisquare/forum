@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class UsersController extends Controller
@@ -14,6 +14,11 @@ class UsersController extends Controller
     public function show($id){
         $user = User::where('id',$id)->firstOrFail();
         $details = $user->details;
-        return view('users.show',['user'=>$user,'details'=>$details]);
+        $replies = $user->replies;
+        $articles = $user->articles;
+        $posts = $user->posts;
+        return view('users.show',['user'=>$user,'details'=>$details,
+                                        'replies'=>$replies,
+                                        'articles'=>$articles,"posts"=>$posts]);
     }
 }

@@ -19,7 +19,7 @@ use Illuminate\Support\Carbon;
  * @property string|null $atName
  * @property string|null $deleted_at
  * @property int $agreeCount
- * @property int $publisherId
+ * @property int $user_id
  * @property string $publisherName
  * @property string|null $publisherAvatar
  * @property string|null $published_at
@@ -38,7 +38,7 @@ use Illuminate\Support\Carbon;
  * @method static Builder|Reply whereId($value)
  * @method static Builder|Reply wherePublishedAt($value)
  * @method static Builder|Reply wherePublisherAvatar($value)
- * @method static Builder|Reply wherePublisherId($value)
+ * @method static Builder|Reply whereuser_id($value)
  * @method static Builder|Reply wherePublisherName($value)
  * @method static Builder|Reply whereTopic($value)
  * @method static Builder|Reply whereTopicId($value)
@@ -67,4 +67,9 @@ class Reply extends Model
             ->orderBy('published_at', 'desc')
             ->paginate(config('diisquare.reply_per_page'));
     }
+
+    public function user(){
+        return $this->belongsTo('App\Models\User');
+    }
+    ## TODO: edit corresponding method
 }

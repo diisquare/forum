@@ -14,7 +14,7 @@ class ArticleUpdateRequest extends FormRequest
      */
     public function authorize()
     {
-        if ($this->request->get('publisherId')==Auth::id())
+        if ($this->request->get('user_id')==Auth::id())
             return true;
         else
             return false;

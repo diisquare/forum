@@ -22,7 +22,7 @@ class CreateRepliesTable extends Migration
             $table->bigInteger('atId')->nullable();
             $table->softDeletes();
             $table->integer('agreeCount')->unsigned()->default(0);
-            $table->integer('publisherId')->unsigned();
+            $table->integer('user_id')->unsigned();
             $table->timestamp('published_at')->nullable();
             $table->timestamps();
         });

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ArticleUpdateRequest;
 use App\Models\Section;
-use App\User;
+use App\Models\User;
 use Carbon\Carbon;
 use App\Models\Article;
 use App\Http\Requests\ArticleCreateRequest;
@@ -22,14 +22,14 @@ class ArticlesController extends Controller
         'title' => '',
         'content' => '',
         'sid' => '',
-        'publisherId'=>'',
+        'user_id'=>'',
         'repliesStr'=>'',
     ];
 
     public function show($id){
         $article = Article::where('id',$id)->firstOrFail();
         //        TODO:匿名功能
-        $user = User::where('id',$article['publisherId'])->firstOrFail();
+        $user = User::where('id',$article['user_id'])->firstOrFail();
         $replies = $article->replies();
         return view('articles.show',['article'=>$article,'user'=>$user,'replies'=>$replies]);
     }
@@ -45,7 +45,7 @@ class ArticlesController extends Controller
         foreach (array_keys($this->fields) as $field){
             $article->$field = $request->get($field);
         }
-        $article->publisherId=Auth::id();
+        $article->user_id=Auth::id();
         $now =  Carbon::now()->addHour();
         $article->published_at = $now->format('Y-m-d g:i');
         $article->save();
@@ -55,7 +55,7 @@ class ArticlesController extends Controller
 
     public function edit($id){
         $article = Article::where('id',$id)->firstOrFail();
-        if ($article->publisherId!=Auth::id())
+        if ($article->user_id!=Auth::id())
             return 403;//TODO:403
         $sections = DB::table('sections')->get();
         return view('articles.edit',['article'=>$article,'sections'=>$sections]);
@@ -73,7 +73,7 @@ class ArticlesController extends Controller
 
    public function destroy($id){
        $article = Article::where('id',$id)->firstOrFail();
-       if ($article->publisherId!=Auth::id())
+       if ($article->user_id!=Auth::id())
            return 403;//TODO:403
        //todo section detach
        $sid = $article->sid;

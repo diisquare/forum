@@ -38,6 +38,7 @@ class ImagesController extends Controller
             $validator = Validator::make($data, $rules, $messages);
 
             if ($validator->passes()) {
+
                 $destPath = 'uploads/content/';
                 $savePath = $destPath.''.date('Ymd', time());
                 $ext = $file->getClientOriginalExtension();

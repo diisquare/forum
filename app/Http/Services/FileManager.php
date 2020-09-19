@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Storage;
 
+
+
 class FileManager
 {
     protected $fileTypes = [
@@ -26,6 +28,13 @@ class FileManager
     private $storage;
     private $sharedDisk='share';//这是一个很不好的写法，暂时没有想到解决方案;
 
+
+    /**
+     * FileManager constructor.
+     * @param string $path filepath
+     * @param string $disk default = 'share'
+     */
+
     public function __construct($path='/',$disk='share')
     {
         $this->path=$path;
@@ -33,15 +42,24 @@ class FileManager
         $this->storage=Storage::disk($this->disk);
     }
 
-    // show all file and directories under $path
+    /**
+     * show all file and directories under $path with info.
+     *
+     * @return array
+     */
+
     public function ls(){
         $files= $this->storage->files($this->path);
         $directories =$this->storage->directories($this->path);
-
         return array_merge($this->formatDirectories($directories),$this->formatFiles($files));
     }
 
 
+    /**
+     * Get Directories' information
+     * @param $dirs
+     * @return array
+     */
     private function formatDirectories($dirs){
         $dirsInfo=[];
         foreach ($dirs as $dir){
@@ -135,6 +153,11 @@ class FileManager
         return false;
     }
 
+    /**
+     * set frontend for different file-type;
+     * @param $file
+     * @return string
+     */
     private function getFilePreview($file)
     {
         switch ($this->detectFileType($file)) {
@@ -188,6 +211,10 @@ class FileManager
         return $preview;
     }
 
+    /**
+     * download file
+     * @return \Symfony\Component\HttpFoundation\BinaryFileResponse
+     */
     public function download(){
 //        return $this->storage->download($this->path);
         $path_parts = pathinfo($this->path);

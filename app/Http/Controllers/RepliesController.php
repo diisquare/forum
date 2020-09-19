@@ -16,7 +16,7 @@ class RepliesController extends Controller
         'content' => '',
         'topic'=>'',
         'topicId' => '',
-        'publisherId'=>'',
+        'user_id'=>'',
         'published_at'=>''
     ];
 
@@ -38,7 +38,7 @@ class RepliesController extends Controller
         foreach (array_keys($this->fields) as $field){
             $reply->$field = $request->get($field);
         }
-        $reply->publisherId=Auth::id();
+        $reply->user_id=Auth::id();
         $now =  Carbon::now()->addHour();
         $reply->published_at = $now->format('Y-m-d g:i');
         $reply->save();
@@ -85,7 +85,7 @@ class RepliesController extends Controller
     public function destroy($id)
     {
         $reply = Reply::where('id',$id)->firstOrFail();
-        if ($reply->publisherId!=Auth::id())
+        if ($reply->user_id!=Auth::id())
             return 403;//TODO:403
         //todo topic detach
         try {

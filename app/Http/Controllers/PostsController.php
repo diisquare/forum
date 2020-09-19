@@ -7,7 +7,7 @@ use App\Http\Requests\PostUpdateRequest;
 use App\Models\Post;
 use App\Models\Section;
 use Carbon\Carbon;
-use App\User;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
@@ -17,14 +17,14 @@ class PostsController extends Controller
         'title' => '',
         'content' => '',
         'sid' => '',
-        'publisherId'=>'',
+        'user_id'=>'',
         'repliesStr'=>'',
     ];
 
     public function show($id){
         $post = Post::where('id',$id)->firstOrFail();
         //        TODO:匿名功能
-        $user = User::where('id',$post->publisherId)->firstOrFail();
+        $user = User::where('id',$post->user_id)->firstOrFail();
         $replies = $post->replies();
         return view('posts.show',['post'=>$post,'user'=>$user,'replies'=>$replies]);
     }
@@ -40,7 +40,7 @@ class PostsController extends Controller
         foreach (array_keys($this->fields) as $field){
             $post->$field = $request->get($field);
         }
-        $post->publisherId=Auth::id();
+        $post->user_id=Auth::id();
         $now =  Carbon::now()->addHour();
         $post->published_at = $now->format('Y-m-d g:i');
         $post->save();
@@ -50,7 +50,7 @@ class PostsController extends Controller
 
     public function edit($id){
         $post = post::where('id',$id)->firstOrFail();
-        if ($post->publisherId!=Auth::id())
+        if ($post->user_id!=Auth::id())
             return 403;//TODO:403
         $sections = DB::table('sections')->get();
         return view('posts.edit',['post'=>$post,'sections'=>$sections]);
@@ -68,7 +68,7 @@ class PostsController extends Controller
 
     public function destroy($id){
         $post = Post::where('id',$id)->firstOrFail();
-        if ($post->publisherId!=Auth::id())
+        if ($post->user_id!=Auth::id())
             return 403;//TODO:403
         //todo section detach
         $sid = $post->sid;

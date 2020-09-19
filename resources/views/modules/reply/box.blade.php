@@ -3,9 +3,9 @@
 
     <div class="comment-box col-md-11">
         <div class="comment-head">
-            <h6 class="comment-name"><a href="{{route('users.show',$reply->publisherId)}}">{{getUserName($reply->publisherId)}}</a></h6>
+            <h6 class="comment-name"><a href="{{route('users.show',$reply->user_id)}}">{{getUserName($reply->user_id)}}</a></h6>
             <span>{{$reply->published_at}}</span>
-            @if(Auth::id()==$reply->publisherId)
+            @if(Auth::id()==$reply->user_id)
                 <form role="form" method="POST" action="{{route('replies.destroy',$reply->id)}}">
                     @csrf
                     <input type="hidden" name="_method" value="DELETE">
@@ -21,7 +21,7 @@
         </div>
         <div hidden>
             <fatherId>{{$reply->id}}</fatherId>
-            <atId>{{$reply->publisherId}}</atId>
+            <atId>{{$reply->user_id}}</atId>
         </div>
     </div>
 

@@ -17,7 +17,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string|null $deleted_at
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @property-read \App\User $user
+ * @property-read \App\Models\User $user
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\UserDetail newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\UserDetail newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\UserDetail query()
@@ -39,6 +39,6 @@ class UserDetail extends Model
      * get the user that owns the details
      */
     public function user(){
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('App\Models\User');
     }
 }

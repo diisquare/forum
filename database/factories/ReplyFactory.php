@@ -12,7 +12,7 @@ $factory->define(Reply::class, function (Faker $faker) {
         'fatherId'=>0,
         'topic'=>$faker->numberBetween(0,1),
         'topicId'=>$faker->numberBetween(1,20),
-        'publisherId'=>$faker->numberBetween(1,20),
+        'user_id'=>$faker->numberBetween(1,20),
         'agreeCount'=>0,
     ];
 });

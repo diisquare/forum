@@ -7,7 +7,7 @@
             <form role="form" method="POST" action="{{route('articles.update',$article->id)}}">
                 @csrf
                 <div class="row">
-                    <input id="publisherId" name="publisherId" type="hidden" value="{{$article->publisherId}}">
+                    <input id="user_id" name="user_id" type="hidden" value="{{$article->user_id}}">
                     <div class="col-md-6 mb-3">
                         <label for="topic">发表类型</label>
                         <select class="custom-select d-block w-100" id="topic"  name="topic_type">
